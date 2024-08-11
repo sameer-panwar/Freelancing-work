@@ -1,6 +1,13 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 15px;
+    width: 100vw;
 }
 
 ul{
@@ -28,14 +35,14 @@ header p{
 }
 
 .profile{
-    display: flex;
-    padding-left: 60px;
-    padding-right: 40px;  
-    width: 100vw; 
+    display: grid;
+    grid-template-columns: 280px 1fr 300px;
+    margin: 40px;  
+    width: fit-content; 
 }
 
 .profile-photo{
-    width: 280px;
+    width: 270px;
     height: auto;
     border: 1px solid black;
     border-radius: 50%;
@@ -50,7 +57,7 @@ header p{
 
 .details{
     margin: 20px 80px;
-    width: calc(100% - 60%);
+    width: calc(100% - 30%);
 }
 
 .details h2{
@@ -64,10 +71,8 @@ header p{
 }
 
 .profession{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    width: max-content;
+    text-align: right;
+    word-wrap: break-word;
 }
 
 .profession p{
