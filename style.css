@@ -46,17 +46,20 @@ header p{
 }
 
 .profile-photo{
+    display: inline-block;
     width: 270px;
-    height: auto;
-    border: 1px solid black;
+    height: 270px;
+    border: 4px solid black;
     border-radius: 50%;
+    padding: 10px;
+    overflow: hidden;
 }
 
 .profile-photo img{
     border-radius: 50%;
-    width: 267px;
-    height: inherit;
-    padding: 6px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 
@@ -67,6 +70,7 @@ header p{
 
 .details h2{
     font-size: 30px;
+    margin-bottom: 20px;
 }
 
 .details div{
