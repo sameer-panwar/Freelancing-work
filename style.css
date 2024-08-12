@@ -207,3 +207,8 @@ header p{
 .education > div{
     margin-bottom: 20px;
 }
+
+.cloud-image{
+    width: 26px;
+    height: 18px;
+}
